@@ -15,42 +15,9 @@
 		z-index: 999
 		transition: all .25s ease-in-out
 		&.active , &.expand
-	.language
-		margin-bottom: 0 
-		display: flex
-		// align-items: center
-		+mar(0)
-		+pad(0)
-		li 
-			list-style: none
-			+ li 
-				margin-right: .5rem
-			a 
-				color: lighten(color-get($mau,main),0%)
-				display: inline-block
-				text-decoration: none
-				+pad(0.5rem 1rem)
-			&:hover, &.active, &.show
-				a
-					color: color-get($mau,extra)
-	.contactinfo
-		margin-bottom: 0 
-		display: flex
-		+mar(0)
-		+pad(0)
-		flex-wrap: wrap
-		li 
-			list-style: none
-			a, .link
-				color: lighten(color-get($mau,main),30%)
-				display: inline-block
-				text-decoration: none
-				+pad(0.5rem 1rem)
-			&:hover, &.active, &.show
-				a
-					color: color-get($mau,trang)
 	.k-menu-bar
 		color: color-get($mau,main)
+		
 		.k-button-toggle
 			color: color-get($mau,main)
 		.navbar-brand
@@ -64,16 +31,20 @@
 	.k-responsive-menu
 		background: color-get($mau,main)
 		.navbar-brand
-			color: color-get($mau,trang)
 			img
-				max-height: 2rem
+				max-height: 3rem
 		.nav
 			.nav-item
 				.nav-link
-					color: lighten(color-get($mau,main),30%)
-				&:hover, &.active, &.show
+					color: color-get($mau,trang)
+					font-size: 1.5rem
+				&.active, &.show
 					.nav-link
-						color: color-get($mau,trang)
+						text-decoration: underline
+			#phone
+				padding: 0.5rem 1rem
+				color: color-get($mau,trang)
+				font-size: 1.5rem
 		.k-menu-bar
 			.k-button-toggle
 				color: color-get($mau,trang)
@@ -84,84 +55,51 @@
 		.k-responsive-menu
 			background: color-get($mau,trang)
 			padding-top: 0
-			padding-bottom: 0
+			padding-bottom: 1rem
 			position: relative
 			.navbar-brand
-				+pad(1rem 0 0 0)
-				+pos(abs, 0 null null 0)
-				background: #fff
-				width: 160px
-				text-align: center
-				&:after 
-					content: ''
-					display: block
-					height: 16px 
-					width: 160px
-					+pos(abs, calc(100% - 0px) null null 0)
-					background: url('../img/bottom.png') center top no-repeat
-					background-size: cover
-					z-index: -1
 				img 
-					max-height: 5.2rem
+					max-height: 3.75rem
 					+transition(.3s all ease-in-out)
-					
-			.nav
+			ul.nav
 				justify-content: flex-end
+				align-items: center
 				.nav-item
-					+ .nav-item
-						margin-left: 1rem
-					&.dropdown
-						margin-right: 1rem
-						.dropdown-toggle
-							&:after 
-								content: "\f078"
-								border: 0
-								font-family: 'Font Awesome 5 Free'
-								font-weight: 900
-								vertical-align: initial
+					margin-left: 1.1rem
 					.nav-link
-						color: lighten(color-get($mau,den),40%)
-						+pad(1rem 0)
+						font-size: 0.9375rem
+						color: color-get($mau,den) 
+						+pad(1rem 0 0 0)
+						line-height: 2rem
+						text-transform: uppercase
+						.mdi-home
+							line-height: 1.5rem
+							font-size: 1.5rem
 					&:hover, &.active, &.show
 						.nav-link
 							color: color-get($mau,extra)
-					.dropdown-menu
-						.dropdown-item
-							color: lighten(color-get($mau,den),40%)
-							&:active 
-								color: color-get($mau,trang)
+							border-bottom: 2px solid color-get($mau,xam-2)
 			.mainnav
 				display: flex
 				flex-direction: column
 				.topbar
 					justify-content: flex-end
 					display: flex
-					height: 38px
+					height: auto
 					+transition(.3s all ease-in-out)
-					.inner
-						background: lighten(color-get($mau,main),0%)
-						+bor-rad(0 0 25px 25px)
-						padding-left: 1.25rem 
-						padding-right: 1.25rem
-						display: flex
-						width: auto
-				.contactinfo, .language
-					flex-direction: row
-					+fz(.85rem)
-					padding: 0 .5rem
-					&.line
-						border-left: 1px solid  color-get($mau,trang)
-						border-right: 1px solid  color-get($mau,trang)
-					li 
-						color: color-get($mau,trang)
-						+ li 
-							margin-right: 0
-						a, .link
+					margin-top: 0.5rem
+					ul 
+						li 
+							line-height: 30px
 							color: color-get($mau,trang)
-							+pad(.75rem .5rem)
-							em 
-								width: 1rem
-								text-align: center
+							height: 30px 
+							text-align: center
+							&.phone
+								width: 160px 
+								background: color-get($mau,extra) 
+							&.search
+								width: 30px 
+								background: color-get($mau,xam-2) 
 		&.fixedheader
 			&.active
 				.k-responsive-menu
@@ -174,23 +112,15 @@
 	+media-breakpoint-up(xl)
 		.k-responsive-menu
 			.navbar-brand
-				width: 206px
-				+pos(abs, 0 null null -4.5rem)
-				&:after 
-					height: 22px 
-					width: 206px
-				img 
-					max-height: 6.2rem
-			.nav
+				max-height: 6.2rem
+				padding: 0.5rem 0 0 0
+			ul.nav
 				.nav-item
-					+ .nav-item
-						margin-left: 1.5rem
-					.nav-link
-						+pad(1.5rem 0)
-						text-transform: uppercase
+					margin-left: 2.5rem
 		&.fixedheader
 			&.active
 				.k-responsive-menu
 					.navbar-brand 
 						img
 							max-height: 3.5rem
+							padding-bottom: 0.5rem
