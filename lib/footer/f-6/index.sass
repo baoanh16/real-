@@ -4,24 +4,25 @@
 //////////////////////////////////////
 
 .canhcam-footer-6
-	background-color: darken(color-get($mau,trang) ,85%)
 	position: relative
 	z-index: 1
 	overflow: hidden
 	color: darken(color-get($mau,trang) ,40%)
 	+media-breakpoint-down(xs)
 		text-align: center
+	font-family: 'Montserrat', sans-serif
 	h4
-		color: darken(color-get($mau,trang) ,80%)
+		color: color-get($mau,trang)
 		text-transform: uppercase
 		position: relative
-		+fz(1.2rem)
-		+fw(600)
+		+fz(1rem)
+		+fw(500)
 		margin-bottom: 1.5rem
+		&.register
+			font-family: 'Nunito', sans-serif
 	.linkfooter
 		padding: 3rem 0
-		+media-breakpoint-up(md)
-			+pad(4rem 0)
+		color: color-get($mau,trang)
 		.list-group
 			.list-group-item
 				display: inline-block
@@ -30,11 +31,32 @@
 				+pad(.5rem 0)
 				+media-breakpoint-up(md)
 					+pad(.15rem 0)
-				a
-					font-size: .9rem
-					+link(darken(color-get($mau,trang) ,40%),color-get($mau,main),color-get($mau,main))
+				a,p
+					font-size: 0.875rem
+					color: color-get($mau,front)
+					font-weight: 300
+				a:before
+					content: "- "
+				p 
+					font-family: 'Nunito', sans-serif
+				input
+					border-radius: 0
+					background: transparent
+					border-right: 0
+					border: 1px solid rgba(255,255,255,0.3)
+					&::placeholder
+						font-family: 'Nunito', sans-serif
+						font-size: 0.875rem
+						font-style: italic
+				.input-group-text
+					border-radius: 0
+					background: color-get($mau,extra)
+					color: color-get($mau,trang)
+					border: 0
+					z-index: 1
+
 	.copyright
-		+pad(1rem 0)
+		+pad(0 0 3rem 0)
 		color: darken(color-get($mau,trang) ,30%)
 		.list-group
 			.list-group-item
@@ -42,9 +64,28 @@
 				+bg(none, none, none)
 				border: 0
 				+pad(.5rem 0)
-				a
-					font-size: .9rem
-					+link(darken(color-get($mau,trang) ,30%),darken(color-get($mau,trang) ,70%),darken(color-get($mau,trang) ,70%))
+				p 
+					margin-bottom: 0
+					font-size: 0.875rem
+					color: color-get($mau,trang)
+					line-height: 25px
+				&:last-child
+					p
+						font-size: 0.75rem
+						color: color-get($mau,front)
+						a 
+							color: color-get($mau,front)
+				.social-list
+					li
+						a 
+							display: block
+							width: 28px
+							height: 28px
+							text-align: center
+							border-radius: 50%
+							border: 1px solid rgba(255,255,255,0.3)
+							background: transparent
+							color: color-get($mau,xam-3)
 			+media-breakpoint-up(md)
 				display: flex
 				flex-direction: row
