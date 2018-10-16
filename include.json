@@ -1,0 +1,22 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "header/h-11"
+            ],
+            "body": [
+                "slider/s-2",
+                "breadcrumb/b-1",
+                "boxes/b-9",
+                "tabs/t-2",
+                "pagination/p-1",
+                "boxes/b-17",
+                "news-details/n-1",
+                "form/f-1"
+            ],
+            "footer": [
+                "footer/f-6"
+            ]
+        }
+    }
+}
