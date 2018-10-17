@@ -1,0 +1,53 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.home-dichvu
+	+pad(1.5rem 0)
+	a 
+		&:hover
+			text-decoration: none
+	.feature
+		.item
+			margin-bottom: 1rem
+			&:last-child
+				margin-bottom: 0
+			.feature-col
+				h2 
+					color: color-get($mau,trang)
+					font-size: 1.875rem
+					font-weight: 400
+				figure
+					display: flex
+					margin-bottom: 0
+					padding: 19px 36px
+					background: rgba(229,40,40,0.6)
+					border-radius: 6px
+					.icon
+					figcaption
+						width: calc(100% - 4rem)
+						display: flex
+						flex-direction: column
+						align-self: center
+						padding-left: 1rem
+						.title
+							color: color-get($mau,trang)
+							+fz(1rem)
+							+fw(600)
+							margin-bottom: 0
+							text-transform: uppercase
+						.des
+							margin-bottom: 0
+							color: color-rgba(color-get($mau,trang),.5)
+							line-height: 1rem
+							font-size: .85rem
+	+media-breakpoint-up(md)
+		+pad(3rem)
+		.feature
+			.item
+				margin-bottom: 0
+				.feature-col
+					figure
+						margin-bottom: 0
+						padding: 19px 56px
