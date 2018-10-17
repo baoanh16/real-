@@ -1,0 +1,44 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+	
+.home-tintuc
+	background: color-get($mau,xam-8)
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.owl-theme 
+		.owl-nav
+			button
+				&:hover,&:focus
+					background: transparent
+					outline: none
+					color: color-get($mau,xam-3)
+	.tintuc-slider
+		.owl-nav
+			margin-top: 0
+			.owl-prev,.owl-next
+				width: 45px
+				height: 45px
+				border-radius: 0
+				border: 1px solid color-get($mau,xam-7)
+				color: color-get($mau,xam-3)
+				font-size: 1.5rem
+		.item
+			figure
+				figcaption
+					p 
+						font-size: 0.875rem
+						color: color-get($mau,xam-6)
+						letter-spacing: 0.025rem
+	+media-breakpoint-up(md)
+		.tintuc-slider
+			.owl-nav
+				position: absolute
+				top: -68px
+				right: 0
+				.owl-prev,.owl-next
+					width: 32px
+					height: 32px
+					font-size: 0.75rem
