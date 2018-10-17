@@ -45,24 +45,12 @@
 							letter-spacing: 1px
 		// Dots
 		.owl-dots
-			+pos(abs, null 0 1rem null)
+			+pos(abs, null 0 2rem null)
 			width: 100%
 			counter-reset: dots
 			display: flex
 			justify-content: center
 			overflow: hidden
-			// &:before,&:after
-			// 	position: absolute
-			// 	width: 180px
-			// 	height: 1px
-			// 	background: color-get($mau,trang)
-			// 	content: ''
-			// 	top: 50%
-			// &:before
-			// 	margin-left: -12rem
-			// &:after
-			// 	margin-left: 12rem
-
 			.owl-dot
 				position: relative
 				&:focus
@@ -133,20 +121,6 @@
 							background: color-get($mau,trang)
 							left: 50%
 							top: 150%
-				// &:before,&:after
-				// 	position: absolute
-				// 	width: 1px
-				// 	height: 180px
-				// 	background: color-get($mau,trang)
-				// 	content: ''
-				// 	left: 50%
-				// &:before
-				// 	top: 15%
-				// 	margin-left: 0
-				// &:after
-				// 	top: auto
-				// 	bottom: 15%
-				// 	margin-left: 0
 	&:hover
 		+media-breakpoint-up(md)
 			.owl-carousel
