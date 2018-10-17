@@ -1,0 +1,30 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.home-data-count
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.count-item
+		position: relative
+		width: 140px
+		height: 140px
+		border-radius: 50%
+		border: 5px solid color-get($mau,vang-1)
+		margin: 0 auto
+		font-size: 2.25rem
+		color: color-get($mau,trang)
+		span
+			+set-center()
+			&.with-plus
+				&:after
+					content: '+'
+					vertical-align: super
+					font-size: 1.25rem
+	.count-title
+		color: color-get($mau,trang)
+		font-size: 1.125rem
+		h2 
+			text-transform: uppercase
