@@ -7,13 +7,14 @@
 .canhcam-header-11
 	background: color-get($mau,trang)
 	box-shadow: 0 0 5px rgba(0,0,0,.5)
+	+transition(.4s all ease-in-out)
 	&.fixedheader
 		position: fixed
 		top: 0
 		left: 0
 		width: 100%
 		z-index: 999
-		transition: all .25s ease-in-out
+		transition: all .4s ease-in-out
 		&.active , &.expand
 	.k-menu-bar
 		color: color-get($mau,main)
@@ -73,6 +74,7 @@
 						+pad(1rem 0.5rem 0 0.5rem)
 						line-height: 2rem
 						text-transform: uppercase
+						+transition(.3s all ease-in-out)
 						.mdi-home
 							line-height: 1.5rem
 							font-size: 1.5rem
@@ -87,7 +89,7 @@
 					justify-content: flex-end
 					display: flex
 					height: auto
-					+transition(.3s all ease-in-out)
+					+transition(.4s all ease-in-out)
 					margin-top: 0.5rem
 					ul 
 						li 
