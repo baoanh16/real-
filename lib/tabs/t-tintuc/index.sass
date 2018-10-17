@@ -1,0 +1,70 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.tabs-tintuc
+	+pad(4rem 0)
+	.nav-tabs
+		border: 0
+		display: flex
+		justify-content: center
+		.nav-item
+			&:last-child
+				margin-right: 0
+			.nav-link
+				position: relative
+				color: darken(color-get($mau,trang),75%)
+				+bor-rad(0)
+				border: 1.5px solid color-get($mau,xam-1)
+				&.active
+					background: color-get($mau,xam-1)
+					color: color-get($mau,extra)
+					border: 1.5px solid color-get($mau,xam-1)
+					&:after
+						width: calc(100% - 2px)
+						+pos(abs, null 1px 0 null)
+						background: darken(color-get($mau,trang),0%)
+	.tab-content
+		border: 0
+		.tab-pane
+			+pad(1rem)
+			.slider-duan
+				figure 
+					width: 100%
+					.img-block
+						position: relative
+						overflow: hidden
+						width: 100%
+						.img-title
+							padding: 0 1rem 0.5rem
+							width: 100%
+							position: absolute
+							bottom: 0
+							text-transform: uppercase
+							color: color-get($mau,trang)
+							h3 
+								border-bottom: 1px solid darken(color-get($mau,trang),30%)
+								padding-bottom: 0.5rem
+								display: flex
+								justify-content: space-between
+								align-items: center
+								font-size: 1rem
+								span
+									font-size: 0.5rem
+
+	+media-breakpoint-up(md)
+		.nav-tabs
+			.nav-item
+				.nav-link
+					width: 270px
+					height: 40px
+					text-align: center
+
+		.tab-content
+			.tab-pane
+				.slider-duan
+					figure 
+						width: auto
+						.img-block
+							width: auto
