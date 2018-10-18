@@ -5,20 +5,19 @@
                 "header/h-11"
             ],
             "body": [
-                "slider/s-2",
                 "slider/s-home",
-                "breadcrumb/b-1",
-                "boxes/b-9",
-                "tabs/t-2",
                 "tabs/t-duan",
-                "pagination/p-1",
-                "boxes/b-17",
                 "boxes/b-home-dichvu",
                 "boxes/b-home-gioithieu",
                 "boxes/b-home-tintuc",
                 "boxes/b-data-count",
-                "news-details/n-1",
-                "form/f-1"
+                "boxes/b-gioithieu",
+                "boxes/b-tamnhin",
+                "boxes/b-giatri",
+                "boxes/b-lichsu",
+                "boxes/b-thanhvien",
+                "nav/n-gioithieu",
+                "banner/b-subpage"
             ],
             "footer": [
                 "footer/f-6"

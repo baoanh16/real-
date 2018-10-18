@@ -3,10 +3,8 @@
 // CODE
 //////////////////////////////////////
 
-.home-gioithieu
-	+pad(2rem 0)
-	+media-breakpoint-up(lg)
-		+pad(4rem 0)
+.gioithieu
+	+pad(2rem 0 1rem)
 	background-image: url(.././img/realplus/_global/bg_1.png)
 	background-repeat: no-repeat
 	background-position: -5% 140%
@@ -18,26 +16,12 @@
 			font-weight: 400
 			letter-spacing: 0.025rem
 			padding: 0 1rem
-		.viewmore-block
-			padding: 0 1rem
-			.btn-outline-danger 
-				color: color-get($mau,xam-3)
-				font-size: 0.875rem
-				padding: 0.5rem 2.5rem
-				border-color:  color-get($mau,extra)
-				&:hover
-					color: color-get($mau,trang)
-					background: color-get($mau,extra)
 		.img-block
 		+media-breakpoint-up(md)
 			.gioithieu-block
-				font-size: 1.125rem
-				padding: 0 6rem
-			.viewmore-block
-				padding-right: 6rem
+				font-size: 0.9375rem
+				padding: 0 3rem
 		+media-breakpoint-up(lg)
 		+media-breakpoint-up(xl)
 			.gioithieu-block
-				padding: 0 2.875rem 0 16rem
-			.viewmore-block
-				padding-right: 2.875rem
+				padding: 0 2.875rem 0 10rem

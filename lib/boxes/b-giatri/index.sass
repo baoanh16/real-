@@ -1,0 +1,28 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.giatri
+	+pad(0 0 2rem 0)
+	article
+		.gioithieu-block
+			font-size: 1rem
+			color: color-get($mau,xam-3)
+			line-height: 1.75rem
+			font-weight: 400
+			letter-spacing: 0.025rem
+			padding: 0 1rem
+			h2 
+				&:before
+					left: 0
+					transform: rotateX(0)
+		.img-block
+		+media-breakpoint-up(md)
+			.gioithieu-block
+				font-size: 0.9375rem
+				padding: 0 3rem
+		+media-breakpoint-up(lg)
+		+media-breakpoint-up(xl)
+			.gioithieu-block
+				padding: 0 2.875rem 0 10rem
