@@ -1,0 +1,28 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.tuyendung-about
+	+pad(2rem 0 1rem)
+	article
+		.gioithieu-block
+			font-size: 0.875rem
+			color: color-get($mau,den)
+			font-weight: 400
+			letter-spacing: 0.025rem
+			padding: 0 1rem
+			h3 
+				text-transform: uppercase
+				color: color-get($mau,main)
+		.img-block
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 100%
+		+media-breakpoint-up(sm)
+			.gioithieu-block
+				font-size: 1rem
+		+media-breakpoint-up(lg)
+		+media-breakpoint-up(xl)
+
