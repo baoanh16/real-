@@ -1,0 +1,101 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.realplus-news
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	background-color: color-get($mau,xam-8)
+	a:hover 
+		text-decoration: none
+	.hot-news
+		figure
+			margin-bottom: 0
+			height: 200px
+			width: 100%
+			.imgblock
+				position: relative
+				-webkit-box-shadow: inset 0px -48px 30px -13px rgba(0,0,0,0.23)
+				-moz-box-shadow: inset 0px -48px 30px -13px rgba(0,0,0,0.23)
+				box-shadow: inset 0px -48px 30px -13px rgba(0,0,0,0.23)
+				width: 100%
+				height: 100%
+				.title-block
+					position: absolute
+					width: 100%
+					bottom: 0
+					padding: 0 1rem
+					color: color-get($mau,trang)
+					font-size: 0.9375rem
+					text-align: center
+	.part-news
+		figure 
+			display: flex
+			flex-direction: column
+			background-color: color-get($mau,trang)
+			.imgblock
+				overflow: hidden
+				flex: 50%
+			figcaption
+				flex: 50%
+				padding: 0.5rem 0.5rem 1rem
+				.title-block
+					display: flex
+					flex-direction: column
+					justify-content: center
+					height: 100%
+					color: color-get($mau,den)
+					p 
+						font-size: 0.875rem
+						margin-bottom: 0
+						max-height: 40px
+						text-overflow: ellipsis
+						overflow: hidden
+					time 
+						font-size: 0.75rem
+						color: color-get($mau,xam-10)
+	.other-news
+		justify-content: center
+		figure
+			background-color: color-get($mau,trang)
+			.imgblock
+				img 
+					width: 100%
+			figcaption
+				color: color-get($mau,den)
+				padding: 0.5rem 0.5rem 1rem
+				p 
+					font-size: 0.875rem
+					margin-bottom: 0
+					max-height: 40px
+					text-overflow: ellipsis
+					overflow: hidden
+				time 
+					font-size: 0.75rem
+					color: color-get($mau,xam-10)
+
+			
+	+media-breakpoint-up(sm)
+		.hot-news
+			figure
+				height: 350px
+				.imgblock
+					.title-block
+						font-size: 1.25rem
+						text-align: left
+		.part-news
+			figure
+				display: flex
+				flex-direction: row
+				.imgblock
+					overflow: hidden
+					flex: 36.5%
+	+media-breakpoint-up(xl)
+		.part-news
+			figure
+				.imgblock
+					overflow: hidden
+					flex: 36%
+				figcaption
+					flex: 64%

@@ -17,7 +17,8 @@
                 "boxes/b-lichsu",
                 "boxes/b-thanhvien",
                 "nav/n-gioithieu",
-                "banner/b-subpage"
+                "banner/b-subpage",
+                "news/n-1"
             ],
             "footer": [
                 "footer/f-6"
