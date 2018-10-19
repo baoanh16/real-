@@ -1,0 +1,52 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.tuyendung-workplace
+	+pad(2rem 0 3rem)
+	article
+		.gioithieu-block
+			background-color: color-get($mau,trang)
+			font-size: 1rem
+			color: color-get($mau,xam-3)
+			font-weight: 400
+			padding: 1.5rem
+			line-height: 1.375rem
+			display: flex
+			flex-direction: column
+			justify-content: center
+			h3 
+				color: color-get($mau,main)
+				text-transform: uppercase
+				font-size: 1.5rem
+				margin-bottom: 1.5rem
+			p 
+				margin-bottom: 0
+				font-size: 0.875rem
+				color: color-get($mau,den)
+				text-align: justify
+			ul 
+				padding: 0 0 0 1rem
+				margin-bottom: 0.4rem
+				li 
+					margin-bottom: 0.2rem
+				
+		+media-breakpoint-up(sm)
+			.gioithieu-block
+				padding: 1.5625rem 2rem 2.5rem 3.25rem
+				font-size: 1.2rem
+				p 
+					font-size: 1rem
+		+media-breakpoint-up(md)
+			
+		+media-breakpoint-up(lg)
+			.left
+				padding-right: 0.1rem
+			.right
+				padding-left: 0.1rem
+			.gioithieu-block
+				display: block
+				height: 290px
+				padding: 1.5625rem 1.5625rem 2.5rem 3.25rem
+		+media-breakpoint-up(xl)
