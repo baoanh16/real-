@@ -1,0 +1,60 @@
+section.chamsockhachhang
+	.container
+		h1.section-title.mb-3 Chăm sóc khách hàng
+		.row.my-4
+			.col
+				ul#ccTabs.nav.nav-tabs(role="tablist")
+					li.nav-item
+						a#cct-01-tab.nav-link.active(data-toggle="tab" href="#cct-01" role="tab" aria-controls="cct-01" aria-selected="true") Câu hỏi thường gặp
+					li.nav-item
+						a#cct-02-tab.nav-link(data-toggle="tab" href="#cct-02" role="tab" aria-controls="cct-02" aria-selected="false") Chính sách hỗ trợ
+		.row
+			.col-lg-4.order-lg-2
+				.question
+					h2.question-title.mb-4 Gửi câu hỏi
+					form.validator
+						.form-group
+							label(for='name') Họ tên
+							input#name.form-control(type='text', data-error="Vui lòng nhập thông tin", required)
+							.help-block.with-errors
+						.form-group
+							label(for='Email') Email
+							input#Email.form-control(type='text',  data-error="Vui lòng nhập thông tin", pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required)
+							.help-block.with-errors
+						.form-group
+							label(for='title') Tiêu đề
+							input#Title.form-control(type='text',)
+						.form-group
+							label(for='sms') Nội dung
+							textarea#sms.form-control(name="sms", cols="30", rows="5")
+						.form-group
+							button.mt-4.btn.btn-support(type="submit")
+								| Gửi thông tin
+			.col-lg-8.order-lg-1
+				#ccTabsContent.tab-content
+					#cct-01.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="cct-01-tab") 
+						.list-detail.mt-5.mt-lg-0
+							.item
+								.content
+									h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur recusandae, molestiae deleniti esse placeat iste atque quisquam eos adipisci rerum cupiditate, iusto labore vitae, beatae ducimus ipsam aut unde!
+								.lead
+									figure
+										figcaption
+											p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi inventore explicabo neque ratione doloremque odio adipisci quisquam. Optio magni facilis explicabo, voluptas temporibus rerum autem aut, corrupti odio suscipit hic.
+					#cct-02.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="cct-02-tab") 
+						.list-detail.mt-5.mt-lg-0
+							.item
+								.content
+									h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur recusandae, molestiae deleniti esse placeat iste atque quisquam eos adipisci rerum cupiditate, iusto labore vitae, beatae ducimus ipsam aut unde!
+								.lead
+									figure
+										figcaption
+											p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi inventore explicabo neque ratione doloremque odio adipisci quisquam. Optio magni facilis explicabo, voluptas temporibus rerum autem aut, corrupti odio suscipit hic.
+							.item
+								.content
+									h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur recusandae, molestiae deleniti esse placeat iste atque quisquam eos adipisci rerum cupiditate, iusto labore vitae, beatae ducimus ipsam aut unde!
+								.lead
+									figure
+										figcaption
+											p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi inventore explicabo neque ratione doloremque odio adipisci quisquam. Optio magni facilis explicabo, voluptas temporibus rerum autem aut, corrupti odio suscipit hic.
+					

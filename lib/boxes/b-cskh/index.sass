@@ -1,0 +1,94 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+section.chamsockhachhang
+	+pad(3rem null)
+	.nav-tabs
+		border: 0
+		display: flex
+		justify-content: center
+		.nav-item
+			&:last-child
+				margin-right: 0
+			.nav-link
+				position: relative
+				color: darken(color-get($mau,trang),75%)
+				+bor-rad(0)
+				border: 1.5px solid color-get($mau,xam-1)
+				padding: 0.5rem 1rem
+				font-size: 0.8rem
+				&.active
+					background: color-get($mau,xam-1)
+					color: color-get($mau,extra)
+					border: 1.5px solid color-get($mau,xam-1)
+		+media-breakpoint-up(sm)
+			.nav-item
+				.nav-link
+					padding: 0.5rem 3rem
+					font-size: 1rem
+	.list-detail
+		.content
+			cursor: pointer
+			color: color-get($mau,den)
+			position: relative
+			&:after
+				content: '\e881'
+				font-family: 'Linearicons-Free'
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				right: 0
+				+fz(1.3rem)
+				+lh(48.2px)
+				+transition(all .3s ease-in-out)
+			+pad(1rem null)
+			border-bottom: 1px solid darken(color-get($mau,trang),5%)
+			&.active
+				
+				border-bottom: 0
+				&:after
+					content: '\e882'
+					color: color-get($mau,main)
+				h5
+					color: color-get($mau,main)
+					+fw(500)
+			h5
+				margin-bottom: 0
+				+fz(1rem)
+				+fw(400)
+				max-width: 85%
+		.lead
+			+fw(400)
+			background: darken(color-get($mau,trang),5%)
+			+pad(2rem)
+			+fz(1rem)
+	.support-page
+		padding-top: 3rem
+		padding-bottom: 0
+	.question
+		+pad(2rem)
+		border: 1px solid color-get($mau,main)
+		+bor-rad(5px)
+		.question-title
+			text-align: center
+			text-transform: uppercase
+			+fz(1.5rem)
+			color: color-get($mau,den)
+			+fw(600)
+		form
+			.form-group
+				label
+					color: color-get($mau,den)
+					+fw(400)
+				.form-control
+					background: darken(color-get($mau,trang),3%)
+				textarea
+					height: 140px
+				.btn-support
+					width: 100%
+					color: color-get($mau,trang)
+					background: color-get($mau,extra)
+					+fz(1.1rem)
+					+fw(500)

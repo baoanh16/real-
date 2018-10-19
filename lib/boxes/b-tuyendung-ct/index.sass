@@ -1,0 +1,75 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+section.tuyendung-chitiet
+	+pad(3rem null)
+	h2 
+		text-transform: uppercase
+		font-size: 1.875rem
+		color: color-get($mau,xam-2)
+		margin-bottom: 0
+	.list-detail
+		h5 
+			font-size: 1.125rem
+			text-transform: uppercase
+			color: color-get($mau,den)
+		p 
+			font-size: 0.9375rem
+			+fw(400)
+		ul
+			li 
+				display: flex
+				&:before
+					font-family: "Material Design Icons"
+					content: '\f12c'
+					padding-right: 0.5rem
+					color: color-get($mau,do-2)
+		.desc
+			color: color-get($mau,den)
+			position: relative
+			+pad(1rem null null)
+		.benefits
+			+pad(null null 1rem)
+			+fz(1rem)
+	.support-page
+		padding-top: 3rem
+		padding-bottom: 0
+	.question
+		+pad(2rem)
+		border: 2px solid color-get($mau,main)
+		.question-title
+			text-align: center
+			text-transform: uppercase
+			+fz(1.5rem)
+			color: color-get($mau,main)
+			+fw(600)
+		form
+			.form-group
+				label
+					color: color-get($mau,den)
+					+fw(400)
+				.form-control
+					background: color-get($mau,trang)
+				input
+					border-radius: 0
+				textarea
+					height: 140px
+				&:nth-last-child(2)
+					display: flex
+					flex-direction: column
+					label
+						cursor: pointer
+						&.trigger
+							width: 30%
+							background: linear-gradient(0deg, #b9b9b9 0%, #f3f3f3 100%)
+							text-align: center
+					input
+						display: none
+				.btn-support
+					width: 100%
+					color: color-get($mau,trang)
+					background: color-get($mau,extra)
+					+fz(1.1rem)
+					+fw(500)
