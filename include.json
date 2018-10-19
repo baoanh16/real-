@@ -22,7 +22,8 @@
                 "nav/n-gioithieu",
                 "banner/b-subpage",
                 "table/t-tuyendung",
-                "news/n-1"
+                "news/n-1",
+                "news-details/n-1"
             ],
             "footer": [
                 "footer/f-6"
