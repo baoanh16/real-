@@ -1,0 +1,80 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.tuyendung-slider
+	+pad(2rem 0 6rem)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.list
+		display: flex
+		flex-direction: column
+		.title
+			background: color-get($mau,do-2)
+			text-align: center
+			color: color-get($mau,trang)
+			display: flex
+			align-items: center
+			padding: 1rem
+			h2 
+				text-transform: uppercase
+				line-height: 25px
+				margin-bottom: 0
+		.slider
+			display: flex
+			position: relative
+			.owl-nav
+				position: absolute
+				bottom: -45px
+				right: 0
+				.owl-prev,.owl-next
+					width: 32px
+					height: 32px
+					border: 1px solid color-get($mau,xam-7)
+					border-radius: 0
+					span
+						font-size: 0.75rem
+						color: color-get($mau,xam-3)
+						line-height: 32px
+					&:focus,&:hover
+						outline: none
+						background: transparent
+						span 
+							color: color-get($mau,main)
+				.owl-next
+					margin-right: 0
+			.item
+				background: color-get($mau,xam-12)
+				display: flex
+				flex-direction: column
+				justify-content: center
+				height: 100%
+				text-decoration: none
+				padding: 1.5rem 0.8rem
+				h3 
+					font-size: 0.9375rem
+					font-weight: 400
+					color: color-get($mau,den)
+				ul
+					margin-bottom: 0
+					li 
+						font-size: 0.8125rem
+						color: color-get($mau,xam-13)
+						.fa
+							padding-right: 0.2rem
+		+media-breakpoint-up(sm)
+			.slider
+				.active
+					border-left: 1px solid color-get($mau,xam-14)
+					&:first-child
+						border-left: 0
+		+media-breakpoint-up(md)
+			flex-direction: row
+			.slider
+				max-width: 84%
+		+media-breakpoint-up(lg)
+			.title
+				min-width: 13%
+			.slider
+				max-width: 87%

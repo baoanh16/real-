@@ -6,6 +6,7 @@
             ],
             "body": [
                 "slider/s-home",
+                "slider/s-tuyendung-ct",
                 "tabs/t-duan",
                 "boxes/b-home-dichvu",
                 "boxes/b-home-gioithieu",
@@ -25,7 +26,8 @@
                 "banner/b-subpage",
                 "table/t-tuyendung",
                 "news/n-1",
-                "news-details/n-1"
+                "news-details/n-1",
+                "news-details/n-duan"
             ],
             "footer": [
                 "footer/f-6"

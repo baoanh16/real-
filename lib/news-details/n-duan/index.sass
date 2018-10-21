@@ -1,0 +1,150 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.duan-ct
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	h2
+		+fz(1.875rem)
+		+fw(400)
+		text-align: left
+		margin-bottom: 1.2rem
+		&:before
+			left: 0
+			transform: translateX(0)
+			width: 100%
+	.news-read
+		text-align: start
+		margin-bottom: 2rem
+		
+		p
+			+fz(0.9375rem)
+			+fw(400)
+			color: color-get($mau,xam-3)
+			&.lead
+				+fw(bold)
+				font-size: 1rem
+				margin-top: 0.5rem
+		table
+			tbody
+				tr 
+					th,td
+						border: 0
+					th 
+						+fz(0.9375rem)
+						padding-left: 1.2rem
+						width: 25%
+					td 
+						+fz(0.9375rem)
+						+fw(400)
+						color: color-get($mau,xam-3)
+		.item-news-read
+			text-decoration: none
+			.img-thumbnail
+				border: 0
+				border-radius: 0
+				padding: 0
+				position: relative
+	.other
+		.img-block
+			position: relative
+			text-decoration: none
+			overflow: hidden
+			width: 100%
+			.title-block	
+				padding: 0 1rem 0.5rem
+				width: 100%
+				position: absolute
+				bottom: 0
+				color: color-get($mau,trang)
+				h3
+					border-bottom: 1px solid darken(color-get($mau,trang),30%)
+					padding-bottom: 0.5rem
+					display: flex
+					justify-content: space-between
+					align-items: center
+					font-size: 1rem
+					text-transform: uppercase
+					span
+						font-size: 0.5rem
+
+
+
+	.contact
+		overflow: hidden
+		width: 100%
+		h2
+			color: color-get($mau,main)
+			+fz(1.4rem)
+			margin-bottom: 0
+			padding-bottom: 0.8rem
+		h3
+			color: color-get($mau,main)
+			+fz(1.4rem)
+			margin-bottom: 0
+		.lists
+			.item
+				display: flex
+				text-decoration: none
+				height: 100%
+				overflow: hidden
+				padding: 0.3rem
+				border-radius: 5px
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQYV2NkwAT/GdHE/jMwMDAiC4IFQIpggnABmCCKAEgQAABOBQUaykC8AAAAAElFTkSuQmCC) repeat
+				margin-bottom: 1rem
+				position: relative
+				figure
+					overflow: hidden
+					background: color-get($mau,trang)
+					display: flex
+					align-items: center
+					justify-content: center
+					width: 100%
+					min-height: 80px
+					padding: 1.5rem 1rem 1rem
+					margin-bottom: 0
+					flex-direction: column
+					.thumb
+						display: block
+						height: 100px
+						width: 100%
+						max-width: 100px
+						border-radius: 50%
+						-webkit-box-shadow: 0px 0px 0px 2px color-get($mau,main)
+						-moz-box-shadow: 0px 0px 0px 2px color-get($mau,main)
+						box-shadow: 0px 0px 0px 2px color-get($mau,main)
+					figcaption
+						padding: 1.5rem 0 0 0
+						ul.list-info
+							li 
+								span
+									color: color-get($mau,xam-3)
+								.name
+									color: color-get($mau,main)
+						.icon
+							width: 32px
+							height: 32px
+							border-radius: 2px
+					+media-breakpoint-up(sm)
+						flex-direction: row
+						justify-content: center
+						align-items: flex-start
+						width: 100%
+						figcaption
+							padding: 0 0 0 1.5rem
+					+media-breakpoint-up(lg)
+						flex-direction: column
+						justify-content: flex-start
+						align-items: center
+						figcaption
+							padding: 1.5rem 0 0 0
+					+media-breakpoint-up(xl)
+						flex-direction: row
+						justify-content: flex-start
+						align-items: flex-start
+						figcaption
+							padding: 0 0 0 1.5rem
+
