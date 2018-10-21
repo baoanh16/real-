@@ -12,6 +12,7 @@
 		width: 100%
 		display: none
 		z-index: 100
+		padding-left: 2rem
 		+media-breakpoint-up(md)
 			display: block
 		.breadcrumb
@@ -20,14 +21,22 @@
 			+pad(0)
 			position: relative
 			background: none
-			+opacity(.8)
 			&:before
 				content: ''
+				position: absolute
 				display: block
-				min-width: 1000px
-				height: 2.5rem
-				background: color-get($mau,main)
-				+pos(abs, 0 100% null null)
+				background-image: url(.././img/realplus/_global/logo_s.png)
+				background-repeat: no-repeat
+				background-position: center center
+				background-size: 50%
+				background-color: color-get($mau,trang)
+				width: 60px
+				height: 60px
+				border-radius: 50%
+				top: 0
+				left: 0
+				transform: translateX(-50%)
+				z-index: 1
 			.breadcrumb-item
 				background: color-get($mau,main)
 				+pad(.5rem)
@@ -37,7 +46,7 @@
 				display: flex
 				align-items: center
 				&:first-child
-					padding-left: 0
+					padding-left: 3rem
 				a
 					color: color-get($mau,trang)
 				+ .breadcrumb-item
@@ -51,43 +60,39 @@
 					&:after
 						content: ''
 						display: inline-block
-						width: 0
-						height: 0
-						border-bottom: 2.5rem solid color-get($mau,main)
-						border-right: 2.5rem solid transparent
-						+pos(abs, 0 -2.5rem null null)
+						width: 100vw
+						height: 100%
+						background: color-get($mau,main)
+						+pos(abs, 0 null null 100%)
 	.owl-carousel
 		position: relative
-
-		// Main
-		.owl-stage-outer
-			.item
-				position: relative
-				min-height: 280px
-				+media-breakpoint-up(sm)
-					min-height: 320px
-				+media-breakpoint-up(md)
-					min-height: 380px
-				+media-breakpoint-up(lg)
-					min-height: 480px
-				.title
-					+pos(abs, null null 3rem 0)
-					text-align: center
-					width: 100%
-					+pad(0 1rem)
-					h1
-						color: color-get($mau,trang)
-						+text-sha(1px 1px 3px rgba(0,0,0,.4))
-					p
-						color: color-get($mau,trang)
-						+text-sha(2px 2px 3px rgba(0,0,0,.2))
-						+fz(1.5rem)
-						+lh(1.8rem)
-						+fw(300)
-						+media-breakpoint-up(md)
-							max-width: 50%
-							margin: 0 auto 1rem auto
-		// Nav
+		.item
+			position: relative
+			min-height: 280px
+			+media-breakpoint-up(sm)
+				min-height: 320px
+			+media-breakpoint-up(md)
+				min-height: 380px
+			+media-breakpoint-up(lg)
+				min-height: 480px
+			.title
+				+pos(abs, null null 3rem 0)
+				text-align: center
+				width: 100%
+				+pad(0 1rem)
+				h1
+					color: color-get($mau,trang)
+					+text-sha(1px 1px 3px rgba(0,0,0,.4))
+				p
+					color: color-get($mau,trang)
+					+text-sha(2px 2px 3px rgba(0,0,0,.2))
+					+fz(1.5rem)
+					+lh(1.8rem)
+					+fw(300)
+					+media-breakpoint-up(md)
+						max-width: 50%
+						margin: 0 auto 1rem auto
+/* 		// Nav
 		.owl-nav
 			button
 				&.owl-prev, &.owl-next
@@ -134,4 +139,4 @@
 		+media-breakpoint-up(md)
 			.owl-carousel
 				.owl-nav
-					+opacity(1)
+					+opacity(1) */

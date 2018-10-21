@@ -27,7 +27,8 @@
                 "table/t-tuyendung",
                 "news/n-1",
                 "news-details/n-1",
-                "news-details/n-duan"
+                "news-details/n-duan",
+                "breadcrumb/b-1"
             ],
             "footer": [
                 "footer/f-6"
