@@ -248,4 +248,31 @@ header
 		transform: translateX(-50%)
 		z-index: 1
 
+.pages
+	text-align: center
+	.modulepager
+		.pagination
+			display: block
+			margin: 30px 0 40px
+			li
+				list-style: none
+				display: inline-block
+				text-align: center
+				margin-left: .5rem
+				&:first-child
+					margin-left: 0
+				a,span
+					width: 2rem
+					height: 2rem
+					justify-content: center
+					align-items: center
+					display: flex
+					color: color-get($mau,xam-5)
+					background: color-get($mau,trang)
+					text-decoration: none
+				&.active
+					a,span
+						color: color-get($mau,trang)
+						background: color-get($mau,main)
+
 
