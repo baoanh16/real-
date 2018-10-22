@@ -1,0 +1,19 @@
+extends _layout/layout.pug
+block variables
+	- var title = "Giới thiệu"
+	- var description = "Description for index page"
+	- var bodyclass = "index"
+	- var href = "/gioithieu.html"
+block header
+	include ../lib/header/h-11/index.pug
+block body
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/nav/n-gioithieu/index.pug
+	include ../lib/boxes/b-gioithieu/index.pug
+	include ../lib/boxes/b-tamnhin/index.pug
+	include ../lib/boxes/b-giatri/index.pug
+	include ../lib/boxes/b-lichsu/index.pug
+	include ../lib/boxes/b-thanhvien/index.pug
+
+block footer
+	include ../lib/footer/f-6/index.pug

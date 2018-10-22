@@ -16,16 +16,11 @@
 			justify-content: space-between
 			font-size: 1.2rem
 			padding: 0.5rem 0
-			transition: all 1s ease-in-out
+			transition: all 0.5s ease-in-out
 			span
 				transition: all .3s ease-in-out
 			&:hover
 				text-decoration: none
-			&.active
-				border-bottom: 1px solid color-get($mau,main)
-				span
-					transform: rotateZ(180deg)
-					transition: all .3s ease-in-out
 		nav
 			transition: 0.75s linear
 			display: none
@@ -45,8 +40,10 @@
 				display: block
 				transition: 0.75s linear
 	+media-breakpoint-up(lg)
-		top: 70px
+		top: 71px
 		article
+			.toggle
+				padding: 0.5rem 3rem
 			nav
 				display: block
 				border-bottom: 1px solid color-get($mau,xam-1)

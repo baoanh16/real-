@@ -12,15 +12,19 @@
 		width: 100%
 		display: none
 		z-index: 100
-		padding-left: 2rem
 		+media-breakpoint-up(md)
 			display: block
+			padding-left: 3rem
+		+media-breakpoint-up(lg)
+			padding-left: 4rem
+		+media-breakpoint-up(xl)
+			padding-left: 14rem
 		.breadcrumb
 			margin-bottom: 0
 			+bor-rad(0)
 			+pad(0)
 			position: relative
-			background: none
+			background: color-get($mau,main)
 			&:before
 				content: ''
 				position: absolute
@@ -38,8 +42,7 @@
 				transform: translateX(-50%)
 				z-index: 1
 			.breadcrumb-item
-				background: color-get($mau,main)
-				+pad(.5rem)
+				+pad(.3rem .5rem)
 				position: relative
 				line-height: 1.5rem
 				color: color-get($mau,trang)
@@ -57,13 +60,6 @@
 						line-height: 1
 						overflow: hidden
 				&:last-child
-					&:after
-						content: ''
-						display: inline-block
-						width: 100vw
-						height: 100%
-						background: color-get($mau,main)
-						+pos(abs, 0 null null 100%)
 	.owl-carousel
 		position: relative
 		.item

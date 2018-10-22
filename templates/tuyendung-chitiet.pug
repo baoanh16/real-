@@ -1,0 +1,14 @@
+extends _layout/layout.pug
+block variables
+	- var title = "Tuyển dụng chi tiết"
+	- var description = "Description for index page"
+	- var bodyclass = "index"
+	- var href = "/tuyendung-chitiet.html"
+block header
+	include ../lib/header/h-11/index.pug
+block body
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/boxes/b-tuyendung-ct/index.pug
+	include ../lib/slider/s-tuyendung-ct/index.pug
+block footer
+	include ../lib/footer/f-6/index.pug

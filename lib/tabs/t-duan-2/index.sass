@@ -3,8 +3,8 @@
 // CODE
 //////////////////////////////////////
 
-.tabs-duan
-	+pad(4rem 0 2rem)
+.tabs-duan-2
+	+pad(4rem 0)
 	.nav-tabs
 		border: 0
 		display: flex
@@ -28,22 +28,16 @@
 	.tab-content
 		border: 0
 		.tab-pane
-			+pad(1rem 0 0 0)
+			+pad(1rem)
 			.slider-duan
-				.owl-nav
-					.owl-prev,.owl-next
-						width: 45px
-						height: 45px
-						border: 1px solid color-get($mau,xam-4)
-						color: color-get($mau,xam-5)
-						border-radius: 0
-						font-size: 1.5rem
 				figure 
 					width: 100%
 					.img-block
 						position: relative
 						overflow: hidden
 						width: 100%
+						img
+							width: 100%
 						.img-title
 							padding: 0 1rem 0.5rem
 							width: 100%
@@ -60,13 +54,6 @@
 								font-size: 1rem
 								span
 									font-size: 0.5rem
-	.owl-theme 
-		.owl-nav
-			button
-				&:hover,&:focus
-					background: transparent
-					outline: none
-
 	+media-breakpoint-up(md)
 		.nav-tabs
 			.nav-item
@@ -81,37 +68,3 @@
 						width: auto
 						.img-block
 							width: auto
-
-	+media-breakpoint-up(md)
-		.tab-content
-			.tab-pane
-				.slider-duan
-					.owl-nav
-						.owl-prev,.owl-next
-							position: absolute
-							transform: translateY(-50%)
-							top: 45%
-							span 
-								+set-center()
-						.owl-prev
-							left: -9%
-						.owl-next
-							right: -9%
-	+media-breakpoint-up(lg)
-		.tab-content
-			.tab-pane
-				.slider-duan
-					.owl-nav
-						.owl-prev
-							left: -6%
-						.owl-next
-							right: -6%
-	+media-breakpoint-up(xl)
-		.tab-content
-			.tab-pane
-				.slider-duan
-					.owl-nav
-						.owl-prev
-							left: -5.5%
-						.owl-next
-							right: -5.5%

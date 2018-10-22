@@ -1,0 +1,17 @@
+extends _layout/layout.pug
+block variables
+	- var title = "Tuyển dụng"
+	- var description = "Description for index page"
+	- var bodyclass = "index"
+	- var href = "/tuyendung-1.html"
+block header
+	include ../lib/header/h-11/index.pug
+block body
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/boxes/b-tuyendung-1/index.pug
+	include ../lib/boxes/b-tuyendung-2/index.pug
+	include ../lib/table/t-tuyendung/index.pug
+	include ../lib/boxes/b-tuyendung-3/index.pug
+
+block footer
+	include ../lib/footer/f-6/index.pug

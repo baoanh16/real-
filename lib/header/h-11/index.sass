@@ -21,6 +21,7 @@
 		
 		.k-button-toggle
 			color: color-get($mau,main)
+			padding-right: 0
 		.navbar-brand
 			img
 				max-height: 2rem
@@ -46,6 +47,21 @@
 				padding: 0.5rem 1rem
 				color: color-get($mau,trang)
 				font-size: 1.5rem
+			#search
+				.searchbox
+					display: flex
+					padding: 0.5rem 1rem
+					button
+						width: 30px 
+						height: 30px
+						background: color-get($mau,xam-2) 
+						color: color-get($mau,trang)
+						border: 0
+					input
+						display: block
+						height: 30px
+						width: 100%
+						padding: 0
 		.k-menu-bar
 			.k-button-toggle
 				color: color-get($mau,trang)
@@ -74,14 +90,30 @@
 						+pad(1rem 0.5rem 0 0.5rem)
 						line-height: 2rem
 						text-transform: uppercase
-						+transition(.3s all ease-in-out)
-						.mdi-home
-							line-height: 1.5rem
-							font-size: 1.5rem
+						position: relative
+						&:after
+							position: absolute
+							content: ''
+							width: 0
+							height: 2px
+							background: color-get($mau,xam-2)
+							bottom: 0
+							left: 50%
+							transform: translateX(-50%)
+							transition: .3s width ease-in-out
+					&:last-child
+						.nav-link
+							+pad(1rem 0rem 0 0.5rem)
+							&:after
+								transform: translateX(-40%)
+					.mdi-home
+						line-height: 1.5rem
+						font-size: 1.5rem
 					&:hover, &.active, &.show
 						.nav-link
 							color: color-get($mau,extra)
-							border-bottom: 2px solid color-get($mau,xam-2)
+							&:after
+								width: 100%
 			.mainnav
 				display: flex
 				flex-direction: column
@@ -101,12 +133,19 @@
 								width: 160px 
 								background: color-get($mau,extra) 
 							&.search
-								button
-									width: 30px 
-									height: 30px
-									background: color-get($mau,xam-2) 
-									color: color-get($mau,trang)
-									border: 0
+								.searchbox
+									display: flex
+									button
+										width: 30px 
+										height: 30px
+										background: color-get($mau,xam-2) 
+										color: color-get($mau,trang)
+										border: 0
+									input
+										display: none
+										height: 30px
+										width: 100%
+										padding: 0
 		&.fixedheader
 			&.active
 				.k-responsive-menu

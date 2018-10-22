@@ -1,0 +1,14 @@
+extends _layout/layout.pug
+block variables
+	- var title = "Chăm sóc khách hàng"
+	- var description = "Description for index page"
+	- var bodyclass = "index"
+	- var href = "/chamsockhachhang.html"
+block header
+	include ../lib/header/h-11/index.pug
+block body
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/boxes/b-cskh/index.pug
+
+block footer
+	include ../lib/footer/f-6/index.pug
