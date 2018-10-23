@@ -5,7 +5,7 @@
 
 .canhcam-breadcrumb-1
 	position: relative
-	.main-breadcrumb
+	.Module-151
 		position: absolute
 		bottom: 0
 		left: 0
@@ -41,7 +41,7 @@
 				left: 0
 				transform: translateX(-50%)
 				z-index: 1
-			.breadcrumb-item
+			li
 				+pad(.3rem .5rem)
 				position: relative
 				line-height: 1.5rem
@@ -52,7 +52,9 @@
 					padding-left: 3rem
 				a
 					color: color-get($mau,trang)
-				+ .breadcrumb-item
+					span
+						padding-left: 0.5rem
+				+ li
 					&:before
 						color: color-get($mau,trang)
 						content: '\e876'

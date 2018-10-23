@@ -75,13 +75,14 @@
 			padding-bottom: 1rem
 			position: relative
 			.navbar-brand
-				padding: 0 0 1rem 0
+				padding: 0 0 0.5rem 0
 				img 
 					max-height: 3.75rem
 					+transition(.3s all ease-in-out)
 			ul.nav
 				justify-content: flex-end
 				align-items: center
+				padding-bottom: 1rem
 				.nav-item
 					margin-left: 0.1rem
 					.nav-link
@@ -91,6 +92,8 @@
 						line-height: 2rem
 						text-transform: uppercase
 						position: relative
+						a 
+							text-decoration: none
 						&:after
 							position: absolute
 							content: ''
@@ -112,6 +115,7 @@
 					&:hover, &.active, &.show
 						.nav-link
 							color: color-get($mau,extra)
+							text-decoration: none
 							&:after
 								width: 100%
 			.mainnav
@@ -132,6 +136,9 @@
 							&.phone
 								width: 160px 
 								background: color-get($mau,extra) 
+								a 
+									color: color-get($mau,trang)
+									text-decoration: none
 							&.search
 								.searchbox
 									display: flex
@@ -142,10 +149,9 @@
 										color: color-get($mau,trang)
 										border: 0
 									input
-										display: none
 										height: 30px
 										width: 100%
-										padding: 0
+										padding: 0 0 0 0.5rem
 		&.fixedheader
 			&.active
 				.k-responsive-menu
